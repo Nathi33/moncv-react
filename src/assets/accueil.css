@@ -1,0 +1,39 @@
+.main-accueil {
+  position: relative; /* Pour que le contenu de la div soit positionné par rapport à elle */
+  background-image: url(../images/hero-bg-mobile.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+  overflow: hidden; /* Pour cacher le débordement de l'image */
+}
+
+.main-overlay {
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.accueil-description {
+  text-align: center;
+}
+
+.h1-accueil,
+.h2-accueil {
+  color: #eee;
+  padding-bottom: 2rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .main-accueil {
+    background-image: url(../images/hero-bg.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .main-accueil {
+    background-image: url(../images/hero-bg-tablette.jpg);
+  }
+}

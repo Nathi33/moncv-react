@@ -1,0 +1,15 @@
+.navbar-brand {
+  margin-left: 1rem;
+  padding: 0;
+}
+
+.navbar-nav > li > a {
+  margin-right: 0.9375rem;
+  color: #eee !important;
+}
+
+.navbar-nav > li > a:active,
+.navbar-nav > li > a:focus,
+.navbar-nav > li > a:hover {
+  color: #0d6efd !important;
+}
