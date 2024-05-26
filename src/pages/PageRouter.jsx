@@ -13,7 +13,7 @@ const PageRouter = () => {
     <Routes>
       <Route element={<Layout />}>
         <Route index element={<Accueil />} />
-        <Route path="/accueil" element={<Accueil />} />
+        <Route path="/" element={<Accueil />} />
         <Route path="/services" element={<Services />} />
         <Route path="/realisations" element={<Realisations />} />
         <Route path="/blog" element={<Blog />} />
