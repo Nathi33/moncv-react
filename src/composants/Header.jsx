@@ -1,5 +1,5 @@
-import React from "react";
 import "../assets/header.css";
+import React from "react";
 import { NavLink } from "react-router-dom";
 import favicon from "../images/favicon.png";
 
@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <nav className="navbar navbar-expand-lg bg-dark text-uppercase fixed-top">
       <div className="container-fluid">
-        <NavLink className="navbar-brand" to="/accueil">
+        <NavLink className="navbar-brand" to="/" exact>
           <img src={favicon} alt="Logo Favicon" />
         </NavLink>
         <button
@@ -25,27 +25,27 @@ const Header = () => {
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
               {/* Contrairement à Link, NavLink ajoute automatiquement une classe active au lien lorsque l'URL correspond à l'URL actuelle */}
-              <NavLink className="nav-link" exact to="/accueil">
+              <NavLink className="nav-link" exact to="/">
                 Accueil
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/services">
+              <NavLink className="nav-link" to="/services" exact>
                 Services
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/realisations">
+              <NavLink className="nav-link" to="/realisations" exact>
                 Réalisations
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/blog">
+              <NavLink className="nav-link" to="/blog" exact>
                 Blog
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/contact">
+              <NavLink className="nav-link" to="/contact" exact>
                 Me contacter
               </NavLink>
             </li>

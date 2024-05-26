@@ -11,5 +11,6 @@
 .navbar-nav > li > a:active,
 .navbar-nav > li > a:focus,
 .navbar-nav > li > a:hover {
+  /* !important assure que cette couleur est appliquée même si elle est écrasée par d'autres styles.*/
   color: #0d6efd !important;
 }
