@@ -2,6 +2,9 @@ import "./assets/scrollToTop.css";
 // useState permet de gérer l'état dans le composant
 import React, { useState } from "react";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCircleArrowUp } from "@fortawesome/free-solid-svg-icons";
+
 import PageRouter from "./pages/PageRouter";
 
 function App() {
@@ -38,9 +41,11 @@ function App() {
       <PageRouter />
       {/* Affiche le bouton de retour seulement si showButton est true */}
       {showButton && (
-        <button className="scrollToTopButton" onClick={scrollToTop}>
-          <span className="arrow-up"></span>
-        </button>
+        <FontAwesomeIcon
+          className="scrollToTopButton"
+          icon={faCircleArrowUp}
+          onClick={scrollToTop}
+        />
       )}
     </div>
   );

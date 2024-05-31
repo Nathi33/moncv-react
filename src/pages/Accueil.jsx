@@ -6,13 +6,15 @@ import about from "../images/about.jpg";
 const Accueil = () => {
   // showApropos contrôle l'affiche de la section À propos et setShowApropos met à jour l'état
   const [showApropos, setShowApropos] = useState(false);
-  const location = useLocation(); //rajout
+  // Permet de récupérer l'URL actuelle
+  const location = useLocation();
 
   // Fonction permettant de basculer l'affichage de la section À propos
   const toggleApropos = () => {
     setShowApropos(!showApropos);
   };
 
+  // useEffect permet de déclencher une action lorsqu'un élément de dépendance change
   useEffect(() => {
     // Si l'URL contient #apropos, affiche la section À propos
     if (location.hash === "#apropos") {
@@ -39,7 +41,7 @@ const Accueil = () => {
           <div className="apropos-content">
             <div className="container-apropos row">
               <div className="apropos-left col-md-6">
-                <h2 className="h2-apropos">À propos</h2>
+                <h3 className="h3-apropos">À propos</h3>
                 <p>
                   Passionné par l'informatique et les nouvelles technologies,
                   j'ai suivi une formation d'
@@ -60,7 +62,7 @@ const Accueil = () => {
               </div>
               <div className="apropos-right col-md-6">
                 <img src={about} alt="Profil" />
-                <h2 className="h2-competences">Mes compétences</h2>
+                <h3 className="h3-competences">Mes compétences</h3>
                 <p className="p-progress">html5 90%</p>
                 <div className="progress">
                   <div

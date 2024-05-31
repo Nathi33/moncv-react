@@ -1,14 +1,13 @@
 import "../assets/header.css";
 import React from "react";
 import { NavLink } from "react-router-dom";
-import favicon from "../images/favicon.png";
 
 const Header = () => {
   return (
     <nav className="navbar navbar-expand-lg bg-dark text-uppercase fixed-top">
       <div className="container-fluid">
         <NavLink className="navbar-brand" to="/" exact>
-          <img src={favicon} alt="Logo Favicon" />
+          <h4 className="h4-header">John Doe</h4>
         </NavLink>
         <button
           className="navbar-toggler bg-light"

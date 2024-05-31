@@ -5,9 +5,11 @@ address {
 
 .main-footer {
   padding-top: 1.875rem;
+  overflow: hidden;
 }
+
 .footer-top {
-  margin-left: 1rem;
+  margin-left: 0.3125rem;
 }
 
 .nom {
@@ -22,6 +24,7 @@ address {
   width: 1.5625rem;
   height: 1.5625rem;
   margin-right: 1.25rem;
+  color: #000;
 }
 
 .lien-titre,
@@ -40,11 +43,9 @@ address {
   color: #444;
 }
 
-.container-liste li::before {
-  content: ">";
+.angle-right {
   margin-right: 0.3125rem; /* Espacement entre le symbole et le texte */
   color: #0d6efd;
-  font-weight: 900;
 }
 
 .liste-liens:hover {
@@ -61,4 +62,16 @@ address {
 
 .copyright {
   color: #eee;
+}
+
+@media screen and (min-width: 1024px) {
+  .footer-top {
+    margin-left: 3.125rem;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .footer-top {
+    margin-left: 1.875rem;
+  }
 }

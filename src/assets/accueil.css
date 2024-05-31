@@ -50,7 +50,7 @@
   box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1);
 }
 
-.h2-apropos {
+.h3-apropos {
   border-bottom: solid #0d6efd;
   padding-bottom: 0.625rem;
 }
@@ -59,7 +59,7 @@
   margin-top: 1.5625rem;
 }
 
-.h2-competences {
+.h3-competences {
   padding-top: 0.625rem;
 }
 
