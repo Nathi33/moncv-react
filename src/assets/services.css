@@ -1,0 +1,72 @@
+.banner {
+  background-image: url("../images/banner-mobile.jpg");
+  background-size: contain;
+  background-position: center;
+  background-attachment: fixed;
+  height: 15vh;
+  width: 100%;
+}
+
+.titre-services {
+  text-align: center;
+  padding-top: 1.5625rem;
+}
+
+.h3-services,
+.h4-services {
+  text-transform: uppercase;
+}
+
+.separateur {
+  border-bottom: solid #0d6efd;
+  width: 15%;
+  margin: 0 auto;
+  padding-top: 0.625rem;
+}
+
+.block-services {
+  margin: 6.25rem 0.625rem;
+  min-height: 18.75rem;
+}
+
+.description-services {
+  background-color: #fff;
+  text-align: center;
+  margin-bottom: 1.25rem;
+  padding: 3.125rem 0.625rem;
+}
+
+.icon {
+  color: #0d6efd;
+  width: 1.5625rem;
+  height: 1.5625rem;
+  padding-bottom: 0.625rem;
+}
+
+.description-services:hover .icon {
+  color: #cde1f8;
+}
+
+@media screen and (min-width: 1024px) {
+  .banner {
+    background-image: url(../images/banner.jpg);
+  }
+
+  .block-services {
+    margin: 6.25rem 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .banner {
+    background-image: url(../images/banner-tablette.jpg);
+  }
+
+  .block-services {
+    margin: 6.25rem 0;
+  }
+
+  .description-services {
+    padding: 3.125rem 0;
+  }
+}

@@ -3,9 +3,11 @@ import React from "react";
 
 import { Link } from "react-router-dom";
 
-import logogit from "../images/logogit.png";
-import logolinkedin from "../images/logolinkedin.png";
-import logotwitter from "../images/logotwitter.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faSquareTwitter } from "@fortawesome/free-brands-svg-icons";
+import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 
 const Footer = () => {
   return (
@@ -29,21 +31,21 @@ const Footer = () => {
               rel="noopener noreferrer"
               to="https://github.com/github-john-doe"
             >
-              <img className="logo" src={logogit} alt="Logo GitHub" />
+              <FontAwesomeIcon className="logo" icon={faGithub} />
             </Link>
             <Link
               target="_blank"
               rel="noopener noreferrer"
               to="https://twitter.com/twitter-john-doe"
             >
-              <img className="logo" src={logotwitter} alt="Logo Twitter" />
+              <FontAwesomeIcon className="logo" icon={faSquareTwitter} />
             </Link>
             <Link
               target="_blank"
               rel="noopener noreferrer"
               to="https://www.linkedin.com/linkedin-john-doe"
             >
-              <img className="logo" src={logolinkedin} alt="Logo Linkedin" />
+              <FontAwesomeIcon className="logo" icon={faLinkedin} />
             </Link>
           </div>
         </div>
@@ -56,26 +58,46 @@ const Footer = () => {
             <ul className="container-liste">
               <li>
                 <Link className="liste-liens" to="/">
+                  <FontAwesomeIcon
+                    className="angle-right"
+                    icon={faAngleRight}
+                  />
                   Accueil
                 </Link>
               </li>
               <li>
                 <Link className="liste-liens" to="/#apropos">
+                  <FontAwesomeIcon
+                    className="angle-right"
+                    icon={faAngleRight}
+                  />
                   A propos
                 </Link>
               </li>
               <li>
                 <Link className="liste-liens" to="/services">
+                  <FontAwesomeIcon
+                    className="angle-right"
+                    icon={faAngleRight}
+                  />
                   Services
                 </Link>
               </li>
               <li>
                 <Link className="liste-liens" to="/contact">
+                  <FontAwesomeIcon
+                    className="angle-right"
+                    icon={faAngleRight}
+                  />
                   Me contacter
                 </Link>
               </li>
               <li>
                 <Link className="liste-liens" to="/mentionslegales">
+                  <FontAwesomeIcon
+                    className="angle-right"
+                    icon={faAngleRight}
+                  />
                   Mentions légales
                 </Link>
               </li>
@@ -91,16 +113,28 @@ const Footer = () => {
             <ul className="container-liste">
               <li>
                 <Link className="liste-liens" to="/projet1">
+                  <FontAwesomeIcon
+                    className="angle-right"
+                    icon={faAngleRight}
+                  />
                   Fresh food
                 </Link>
               </li>
               <li>
                 <Link className="liste-liens" to="/projet2">
+                  <FontAwesomeIcon
+                    className="angle-right"
+                    icon={faAngleRight}
+                  />
                   Restaurant Akira
                 </Link>
               </li>
               <li>
                 <Link className="liste-liens" to="/projet3">
+                  <FontAwesomeIcon
+                    className="angle-right"
+                    icon={faAngleRight}
+                  />
                   Espace bien-être
                 </Link>
               </li>
@@ -115,15 +149,31 @@ const Footer = () => {
           <div className="container-articles">
             <ul className="container-liste">
               <li>
-                <Link className="liste-liens">Coder son site en HTML/CSS</Link>
+                <Link className="liste-liens">
+                  <FontAwesomeIcon
+                    className="angle-right"
+                    icon={faAngleRight}
+                  />
+                  Coder son site en HTML/CSS
+                </Link>
               </li>
               <li>
                 <Link className="liste-liens">
+                  <FontAwesomeIcon
+                    className="angle-right"
+                    icon={faAngleRight}
+                  />
                   Vendre ses produits sur le web
                 </Link>
               </li>
               <li>
-                <Link className="liste-liens">Se positionner sur Google</Link>
+                <Link className="liste-liens">
+                  <FontAwesomeIcon
+                    className="angle-right"
+                    icon={faAngleRight}
+                  />
+                  Se positionner sur Google
+                </Link>
               </li>
             </ul>
           </div>

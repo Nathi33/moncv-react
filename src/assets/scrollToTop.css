@@ -1,32 +1,14 @@
 .scrollToTopButton {
   display: none; /* Cacher le bouton par défaut*/
   position: fixed;
-  bottom: 1.25rem;
+  bottom: 1.875rem;
   right: 1.25rem;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 50%;
-  width: 3.125rem;
-  height: 3.125rem;
   cursor: pointer;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 3.125rem;
+  height: 3.125rem;
 }
 
 .scrollToTopButton:hover {
-  background-color: #298eff;
-}
-
-.scrollToTopButton .arrow-up {
-  position: absolute; /* Positione la flèche de manière absolue par rapport à son conteneur*/
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) rotate(0deg); /* Centre la flèche et la positionne vers le haut */
-  width: 0;
-  height: 0;
-  border-left: 0.625rem solid transparent;
-  border-right: 0.625rem solid transparent;
-  border-bottom: 0.625rem solid #fff;
+  color: #298eff;
 }
