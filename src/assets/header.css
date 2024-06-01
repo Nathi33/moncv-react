@@ -23,6 +23,10 @@
   color: #0d6efd !important;
 }
 
+.navbar-toggler {
+  margin-right: 1.875rem;
+}
+
 @media screen and (min-width: 1024px) {
   .navbar-brand {
     margin-left: 3.125rem;

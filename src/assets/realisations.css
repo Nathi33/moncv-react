@@ -35,6 +35,10 @@
   padding-bottom: 0.625rem;
 }
 
+.btn {
+  color: rgba(255, 255, 255, 0.8);
+}
+
 @media screen and (min-width: 1024px) {
   .banner {
     background-image: url(../images/banner.jpg);
