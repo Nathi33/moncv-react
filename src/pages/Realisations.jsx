@@ -27,7 +27,7 @@ const Realisations = () => {
               <p className="card-text">
                 Réalisation d'un site avec commande en ligne.
               </p>
-              <NavLink to="/restaurant" className="btn btn-outline-primary">
+              <NavLink to="#" className="btn btn-outline-primary">
                 Voir
               </NavLink>
             </div>
@@ -48,7 +48,7 @@ const Realisations = () => {
             <div className="card-body">
               <h5 className="card-title">Restaurant Akira</h5>
               <p className="card-text">Réalisation d'un site vitrine.</p>
-              <NavLink to="/restaurant" className="btn btn-outline-primary">
+              <NavLink to="#" className="btn btn-outline-primary">
                 Voir
               </NavLink>
             </div>
@@ -69,7 +69,7 @@ const Realisations = () => {
               <p className="card-text">
                 Réalisation d'un site vitrine pour un praticien de bien-être.
               </p>
-              <NavLink to="/restaurant" className="btn btn-outline-primary">
+              <NavLink to="#" className="btn btn-outline-primary">
                 Voir
               </NavLink>
             </div>
