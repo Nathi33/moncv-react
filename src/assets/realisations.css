@@ -1,0 +1,56 @@
+.main-realisations {
+  margin-bottom: 4.375rem;
+}
+
+.banner {
+  background-image: url("../images/banner-mobile.jpg");
+  background-size: contain;
+  background-position: center;
+  background-attachment: fixed;
+  height: 15vh;
+  width: 100%;
+}
+
+.titre-realisations {
+  text-align: center;
+  padding-top: 1.5625rem;
+}
+
+.h3-realisations {
+  text-transform: uppercase;
+}
+
+.separateur {
+  border-bottom: solid #0d6efd;
+  width: 15%;
+  margin: 0 auto;
+  padding-top: 0.625rem;
+}
+
+.container-realisations {
+  margin: 1.25rem 0.3125rem;
+}
+
+.card-text {
+  padding-bottom: 0.625rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .banner {
+    background-image: url(../images/banner.jpg);
+  }
+
+  .container-realisations {
+    margin: 1.25rem 3.125rem;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .banner {
+    background-image: url(../images/banner-tablette.jpg);
+  }
+
+  .container-realisations {
+    margin: 1.25rem 1.875rem;
+  }
+}
