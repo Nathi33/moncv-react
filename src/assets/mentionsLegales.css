@@ -1,0 +1,49 @@
+.titre-mentions {
+  padding-top: 1.5625rem;
+  padding-bottom: 1.875rem;
+}
+
+.separateur {
+  border-bottom: solid #0d6efd;
+  width: 15%;
+  margin: 0 auto;
+  padding-top: 0.625rem;
+}
+
+.h5-mentions {
+  padding-bottom: 0.625rem;
+}
+
+.lien,
+.lien-credits {
+  text-decoration: none;
+}
+
+.icon {
+  color: #000;
+  height: 1.25rem;
+  width: 1.25rem;
+  padding-top: 0.5rem;
+}
+
+.container-editeur {
+  margin-top: -0.3125rem;
+  margin-bottom: -0.875rem;
+}
+
+.p-editeur {
+  margin-bottom: -0.625rem;
+}
+
+.container-hebergeur {
+  padding-top: 1.25rem;
+}
+
+.p-credits {
+  padding-top: 0.625rem;
+  padding-bottom: 1.25rem;
+}
+
+.lien-credits {
+  padding-left: 0.3125rem;
+}
