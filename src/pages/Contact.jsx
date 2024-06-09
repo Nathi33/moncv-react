@@ -7,17 +7,17 @@ import { faMobileScreen } from "@fortawesome/free-solid-svg-icons";
 
 const Contact = () => {
   return (
-    <div className="main-contact">
-      <div className="contact-overlay">
+    <main className="main-contact">
+      <section className="contact-overlay">
         <div className="block-contact">
-          <div className="titre-contact text-center">
+          <header className="titre-contact text-center">
             <h3 className="h3-contact text-uppercase">Me contacter</h3>
             <p className="p-contact">
               Pour me contacter en vue d'un entretien ou d'une future
               collaboration, merci de remplir le formulaire de contact.
             </p>
             <div className="separateur"></div>
-          </div>
+          </header>
           <div className="container-contact row">
             <div className="contact-form col-12 col-md-6">
               <h4 className="h4-contact">Formulaire de contact</h4>
@@ -112,8 +112,8 @@ const Contact = () => {
             </div>
           </div>
         </div>
-      </div>
-    </div>
+      </section>
+    </main>
   );
 };
 

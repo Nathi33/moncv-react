@@ -23,25 +23,27 @@ const Accueil = () => {
   }, [location]);
 
   return (
-    <div className="general-accueil">
-      <div className="main-accueil">
+    <main className="general-accueil">
+      <section className="main-accueil">
         <div className="main-overlay">
-          <div className="accueil-description">
+          <header className="accueil-description">
             <h1 className="h1-accueil">Bonjour, je suis John Doe</h1>
             <h2 className="h2-accueil">Développeur web full stack</h2>
             <button className="btn btn-primary" onClick={toggleApropos}>
               En savoir plus
             </button>
-          </div>
+          </header>
         </div>
-      </div>
+      </section>
 
       {showApropos && (
-        <div className="section-apropos" id="apropos">
-          <div className="apropos-content">
+        <section className="section-apropos" id="apropos">
+          <article className="apropos-content">
             <div className="container-apropos row">
               <div className="apropos-left col-md-6">
-                <h3 className="h3-apropos">À propos</h3>
+                <header>
+                  <h3 className="h3-apropos">À propos</h3>
+                </header>
                 <p>
                   Passionné par l'informatique et les nouvelles technologies,
                   j'ai suivi une formation d'
@@ -60,9 +62,11 @@ const Accueil = () => {
                   j'écris et je respecte les bonnes pratiques du web.
                 </p>
               </div>
-              <div className="apropos-right col-md-6">
+              <aside className="apropos-right col-md-6">
                 <img src={about} alt="Profil" />
-                <h3 className="h3-competences">Mes compétences</h3>
+                <header>
+                  <h3 className="h3-competences">Mes compétences</h3>
+                </header>
                 <p className="p-progress">html5 90%</p>
                 <div className="progress">
                   <div
@@ -123,12 +127,12 @@ const Accueil = () => {
                     aria-valuemax="100"
                   ></div>
                 </div>
-              </div>
+              </aside>
             </div>
-          </div>
-        </div>
+          </article>
+        </section>
       )}
-    </div>
+    </main>
   );
 };
 
