@@ -36,7 +36,7 @@ Assurez-vous d'avoir la dernière version de Node.js installée avant de continu
 ### Startup
 
 - Lancez le serveur de développement avec la commande : `npm run start`
-- L'application sera accessible à l'adresse http://localhost:3000 indiquée.
+- L'application sera accessible à l'adresse http://localhost:3000 et http://drnt.alwaysdata.net
 
 ### Project construction
 

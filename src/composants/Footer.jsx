@@ -112,7 +112,7 @@ const Footer = () => {
           <div className="container-projets">
             <ul className="container-liste">
               <li>
-                <Link className="liste-liens" to="/projet1">
+                <Link className="liste-liens" to="/realisations">
                   <FontAwesomeIcon
                     className="angle-right"
                     icon={faAngleRight}
@@ -121,7 +121,7 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link className="liste-liens" to="/projet2">
+                <Link className="liste-liens" to="/realisations">
                   <FontAwesomeIcon
                     className="angle-right"
                     icon={faAngleRight}
@@ -130,7 +130,7 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link className="liste-liens" to="/projet3">
+                <Link className="liste-liens" to="/realisations">
                   <FontAwesomeIcon
                     className="angle-right"
                     icon={faAngleRight}
@@ -149,7 +149,7 @@ const Footer = () => {
           <div className="container-articles">
             <ul className="container-liste">
               <li>
-                <Link className="liste-liens">
+                <Link className="liste-liens" to="/blog">
                   <FontAwesomeIcon
                     className="angle-right"
                     icon={faAngleRight}
@@ -158,7 +158,7 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link className="liste-liens">
+                <Link className="liste-liens" to="/blog">
                   <FontAwesomeIcon
                     className="angle-right"
                     icon={faAngleRight}
@@ -167,7 +167,7 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link className="liste-liens">
+                <Link className="liste-liens" to="/blog">
                   <FontAwesomeIcon
                     className="angle-right"
                     icon={faAngleRight}
