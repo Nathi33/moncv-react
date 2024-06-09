@@ -11,9 +11,9 @@ import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 
 const Footer = () => {
   return (
-    <div className="main-footer">
-      <div className="footer-top row">
-        <div className="presentation col-md-6 col-lg-3">
+    <footer className="main-footer">
+      <section className="footer-top row">
+        <article className="presentation col-md-6 col-lg-3">
           <div className="container-description">
             <p className="nom">
               <strong>John Doe</strong>
@@ -48,9 +48,9 @@ const Footer = () => {
               <FontAwesomeIcon className="logo" icon={faLinkedin} />
             </Link>
           </div>
-        </div>
+        </article>
 
-        <div className="liens col-md-6 col-lg-3">
+        <article className="liens col-md-6 col-lg-3">
           <p className="lien-titre">
             <strong>Liens utiles</strong>
           </p>
@@ -103,9 +103,9 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-        </div>
+        </article>
 
-        <div className="projets col-md-6 col-lg-3">
+        <article className="projets col-md-6 col-lg-3">
           <p className="projet-titre">
             <strong>Mes dernières réalisations</strong>
           </p>
@@ -140,9 +140,9 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-        </div>
+        </article>
 
-        <div className="articles col-md-6 col-lg-3">
+        <article className="articles col-md-6 col-lg-3">
           <p className="article-titre">
             <strong>Mes derniers articles</strong>
           </p>
@@ -177,12 +177,12 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-        </div>
-      </div>
-      <div className="footer-bottom">
+        </article>
+      </section>
+      <section className="footer-bottom">
         <p className="copyright">© Design by John Doe</p>
-      </div>
-    </div>
+      </section>
+    </footer>
   );
 };
 

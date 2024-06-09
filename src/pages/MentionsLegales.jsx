@@ -11,15 +11,15 @@ import { faGlobe } from "@fortawesome/free-solid-svg-icons";
 
 const MentionsLegales = () => {
   return (
-    <div className="main-mentions">
-      <div className="titre-mentions">
+    <main className="main-mentions">
+      <header className="titre-mentions">
         <h3 className="h3-mentions text-uppercase text-center">
           Mentions légales
         </h3>
         <div className="separateur"></div>
-      </div>
-      <div className="accordion" id="accordionExample">
-        <div className="accordion-item">
+      </header>
+      <section className="accordion" id="accordionExample">
+        <article className="accordion-item">
           <h2 className="accordion-header" id="headingOne">
             <button
               className="accordion-button"
@@ -81,8 +81,8 @@ const MentionsLegales = () => {
               </div>
             </div>
           </div>
-        </div>
-        <div className="accordion-item">
+        </article>
+        <article className="accordion-item">
           <h2 className="accordion-header" id="headingTwo">
             <button
               className="accordion-button collapsed"
@@ -123,8 +123,8 @@ const MentionsLegales = () => {
               </div>
             </div>
           </div>
-        </div>
-        <div className="accordion-item">
+        </article>
+        <article className="accordion-item">
           <h2 className="accordion-header" id="headingThree">
             <button
               className="accordion-button collapsed"
@@ -165,9 +165,9 @@ const MentionsLegales = () => {
               </p>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
+        </article>
+      </section>
+    </main>
   );
 };
 

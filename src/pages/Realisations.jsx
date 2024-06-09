@@ -8,18 +8,18 @@ import bienetre from "../images/espace-bien-etre.jpg";
 
 const Realisations = () => {
   return (
-    <div className="main-realisations">
-      <div className="banner"></div>
-      <div className="titre-realisations">
+    <main className="main-realisations">
+      <section className="banner"></section>
+      <header className="titre-realisations">
         <h3 className="h3-realisations">Portfolio</h3>
         <p className="p-realisations">
           Voici quelques-unes de mes réalisations
         </p>
         <div className="separateur"></div>
-      </div>
+      </header>
 
-      <div className="container-realisations row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-        <div className="col text-center">
+      <section className="container-realisations row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        <article className="col text-center">
           <div className="card h-100">
             <img src={freshfood} className="card-img-top" alt="fresh-food" />
             <div className="card-body">
@@ -31,14 +31,14 @@ const Realisations = () => {
                 Voir
               </NavLink>
             </div>
-            <div className="card-footer">
+            <footer className="card-footer">
               <small className="text-muted">
                 Site réalisé avec PHP et MySQL
               </small>
-            </div>
+            </footer>
           </div>
-        </div>
-        <div className="col text-center">
+        </article>
+        <article className="col text-center">
           <div className="card h-100">
             <img
               src={restaurantjaponais}
@@ -52,12 +52,12 @@ const Realisations = () => {
                 Voir
               </NavLink>
             </div>
-            <div className="card-footer">
+            <footer className="card-footer">
               <small className="text-muted">Site réalisé avec WordPress</small>
-            </div>
+            </footer>
           </div>
-        </div>
-        <div className="col text-center">
+        </article>
+        <article className="col text-center">
           <div className="card h-100">
             <img
               src={bienetre}
@@ -73,13 +73,13 @@ const Realisations = () => {
                 Voir
               </NavLink>
             </div>
-            <div className="card-footer">
+            <footer className="card-footer">
               <small className="text-muted">Site réalisé en HTML/CSS</small>
-            </div>
+            </footer>
           </div>
-        </div>
-      </div>
-    </div>
+        </article>
+      </section>
+    </main>
   );
 };
 
