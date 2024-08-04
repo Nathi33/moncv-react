@@ -1,6 +1,9 @@
+import "../assets/gitHubProfile.css";
 // useState : hook permettant de gérer l'état local dans un composant fonctionnel
 // useEffect : hook permettant d'effectuer des effets de bord dans un composant fonctionnel
 import React, { useState, useEffect } from "react";
+
+import { Link } from "react-router-dom";
 
 // Déclaration de la fonction GitHubProfile avec comme prpo le nom d'utilisateur GitHub
 function GitHubProfile({ username }) {
@@ -57,27 +60,41 @@ function GitHubProfile({ username }) {
     return null;
   }
 
+  // Formater les dates pour une meilleure lisibilité
+  const formatDate = (dateString) => new Date(dateString).toLocaleDateString();
+
   return (
     <div className="github-profile">
-      {/* Affichage des données du profil récupérées */}
+      <h1>Github user </h1>
+      <h2>{profileData.name || username}</h2>
       <img
         src={profileData.avatar_url}
-        alt={`${profileData.login}'s avatar`}
-        style={{ width: 100 }}
+        alt={`${username} avatar`}
+        width="150"
       />
-      {/* Affiche le nom de l'utilisateur s'il est disponible (profilData.name) sinon utile le login (profilData.login) */}
-      <h2>{profileData.name || profileData.login}</h2>
-      {/* Affiche la biographie de l'utilisateur */}
-      <p>{profileData.bio}</p>
+      <p className="element">{profileData.bio}</p>
       <p>
-        {/* Lien vers le profil GitHub */}
-        <a
-          href={profileData.html_url}
+        <strong>Abonnés : </strong> {profileData.followers}
+      </p>
+      <p className="element">
+        <strong>Abonnements : </strong> {profileData.following}
+      </p>
+      <p className="element">
+        <strong>Créé le : </strong> {formatDate(profileData.created_at)}
+      </p>
+      <p className="element">
+        <strong>Modifié le : </strong> {formatDate(profileData.updated_at)}
+      </p>
+      <p className="element">
+        URL repositories :{" "}
+        <Link
           target="_blank"
           rel="noopener noreferrer"
+          to={profileData.html_url}
         >
-          Voir le profil GitHub
-        </a>
+          {" "}
+          https://api.github.com/users/github-john-doe/repos
+        </Link>
       </p>
     </div>
   );

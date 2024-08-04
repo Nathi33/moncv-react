@@ -1,0 +1,12 @@
+.github-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.25rem;
+  border-radius: 0.625rem;
+}
+
+.element {
+  margin: 0.625rem 0;
+}
