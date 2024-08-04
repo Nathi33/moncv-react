@@ -8,6 +8,7 @@ import Realisations from "./Realisations";
 import Blog from "./Blog";
 import Contact from "./Contact";
 import MentionsLegales from "./MentionsLegales";
+import GitHubProfile from "./GitHubProfile";
 
 const PageRouter = () => {
   return (
@@ -20,6 +21,10 @@ const PageRouter = () => {
         <Route path="/blog" element={<Blog />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/mentionslegales" element={<MentionsLegales />} />
+        <Route
+          path="/github-profile"
+          element={<GitHubProfile username="github-john-doe" />}
+        />
       </Route>
     </Routes>
   );

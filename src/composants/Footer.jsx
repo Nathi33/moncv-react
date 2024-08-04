@@ -26,10 +26,9 @@ const Footer = () => {
           </div>
           <div className="container-logo">
             <Link
-              target="_blank"
               // Empêche suivi SEO
               rel="noopener noreferrer"
-              to="https://github.com/github-john-doe"
+              to="/github-profile"
             >
               <FontAwesomeIcon className="logo" icon={faGithub} />
             </Link>
